@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Informasi Pengelolaan Anggaran</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background-color: #0d6efd;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .login-box {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <h1 class="display-4">Sistem Informasi Pengelolaan Anggaran</h1>
+      <p class="lead">Efisien, Transparan, dan Terintegrasi untuk Instansi Pemerintah</p>
+      <a href="#fitur" class="btn btn-light mt-4">Lihat Fitur</a>
+      <a href="#login" class="btn btn-outline-light mt-4 ms-2">Login</a>
+    </div>
+  </div>
+
+  <!-- Fitur Section -->
+  <div class="section" id="fitur">
+    <div class="container">
+      <h2 class="text-center mb-5">Fitur Utama</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Pengajuan Anggaran</h5>
+              <p class="card-text">Form digital untuk pengajuan anggaran langsung di halaman ini.</p>
+              <a href="#form" class="btn btn-primary">Isi Form Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Verifikasi Real Time</h5>
+              <p class="card-text">Proses verifikasi anggaran oleh pejabat terkait secara cepat dan akurat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Laporan Otomatis</h5>
+              <p class="card-text">Generate laporan keuangan dan anggaran secara otomatis dan siap cetak.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embed Google Form Section -->
+  <div class="section bg-light" id="form">
+    <div class="container">
+      <h2 class="text-center mb-5">Formulir Pengajuan Anggaran</h2>
+      <div class="ratio ratio-1x1">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdI3pM5M9sqfT15ab5H0Va3_5Z8DJ4J78pXKH3PAkMVbE1RFA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Section -->
+  <div class="section" id="login">
+    <div class="container">
+      <h2 class="text-center mb-5">Login Sistem</h2>
+      <div class="login-box">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username/NIP</label>
+            <input type="text" class="form-control" id="username" placeholder="Masukkan Username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Kata Sandi</label>
+            <input type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Masuk</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Sistem Informasi Pengelolaan Anggaran. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .navbar, .offcanvas {
+        max-width: 100% !important;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid d-flex justify-content-start align-items-center">
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Offcanvas Navbar</a>
+      </div>
+    </nav>
+
+    <!-- Offcanvas dari kiri -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OR TKPEKM</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gform">Ajuan Rencana Anggaran</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="ajuanDropdown">Ajuan Pembayaran</a>
+            <ul class="dropdown-menu" aria-labelledby="ajuanDropdown">
+              <li><a class="dropdown-item" href="#">Bahan Riset</a></li>
+              <li><a class="dropdown-item" href="#">Honorarium Narasumber</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Spacer biar isi tidak tertutup navbar -->
+    <div style="margin-top: 80px;"></div>
+
+    <!-- Google Form -->
+    <div class="container-fluid px-3" id="gform">
+      <h3 class="mb-4">Form Ajuan Rencana Anggaran</h3>
+      <div class="ratio ratio-4x3">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe46imMsWWhusvM2mYN8lx8oJr_UydsfUZNtgBGDf8-MnjlOQ/viewform?embedded=true"
+                width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+      </div>
+    </div>
+
+  </body>
+</html>
